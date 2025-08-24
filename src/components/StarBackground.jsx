@@ -1,6 +1,9 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
-const StartBackground = () => {
+// id, size, x, y, opacity, animationDuration
+// id, size, x, y, delay, animationDuration
+
+export const StarBackground = () => {
   const [stars, setStars] = useState([]);
   const [meteors, setMeteors] = useState([]);
 
@@ -18,7 +21,9 @@ const StartBackground = () => {
   }, []);
 
   const generateStars = () => {
-    const numberOfStars = Math.floor((window.innerWidth * innerHeight) / 10000);
+    const numberOfStars = Math.floor(
+      (window.innerWidth * window.innerHeight) / 10000
+    );
 
     const newStars = [];
 
@@ -32,12 +37,12 @@ const StartBackground = () => {
         animationDuration: Math.random() * 4 + 2,
       });
     }
+
     setStars(newStars);
   };
 
   const generateMeteors = () => {
     const numberOfMeteors = 4;
-
     const newMeteors = [];
 
     for (let i = 0; i < numberOfMeteors; i++) {
@@ -50,6 +55,7 @@ const StartBackground = () => {
         animationDuration: Math.random() * 3 + 3,
       });
     }
+
     setMeteors(newMeteors);
   };
 
@@ -87,5 +93,3 @@ const StartBackground = () => {
     </div>
   );
 };
-
-export default StartBackground;
