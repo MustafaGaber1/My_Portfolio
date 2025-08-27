@@ -75,7 +75,7 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      <div className="absolute left-1/2 -translate-x-1/2 bottom-8 flex flex-col items-center animate-bounce">
+      <div className="absolute left-1/2 -translate-x-1/2 bottom-12 flex flex-col items-center animate-bounce">
         <span className="flex items-center text-sm text-muted-foreground mb-2">
           Scroll
         </span>
