@@ -29,7 +29,7 @@ const Navbar = () => {
         "fixed top-0 left-0 w-full z-40 transition-all duration-300",
         isScrolled
           ? "py-6.5 backdrop-blur-md shadow-sm" // <- no bg color
-          : "py-5 bg-transparent"
+          : "py-6.5 bg-transparent"
       )}
     >
       <div className="container flex items-center justify-between">
