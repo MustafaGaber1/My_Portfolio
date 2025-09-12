@@ -63,7 +63,7 @@ const ProjectsSection = () => {
                   {project.tags.map((tag, key) => (
                     <span
                       key={key}
-                      className="px-2 py-1 text-xs border font-medium rounded-full bg-primary/20 text-secondary-foreground"
+                      className="px-2 py-1 text-xs border font-medium rounded-full bg-primary/10 text-secondary-foreground"
                     >
                       {tag}
                     </span>
@@ -74,7 +74,7 @@ const ProjectsSection = () => {
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center ">
                   <div className="flex space-x-3">
                     <a
                       href={project.demoUrl}
